@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 });
 
 const client = createClient({
-  url: 'https://react.eogresources.com/graphql',
+  url: 'https://react.eogresources.com/graphql',  //GraphQL URL
 });
 
 const query = `{
@@ -41,8 +41,10 @@ const Metrics = () => {
   const [result] = useQuery({
     query,
   });
+  
   let selectedMetrics: Array<any> = [];
   const { fetching, data, error } = result;
+
   useEffect(() => {
     if (error) {
       dispatch(actions.metricsApiErrorReceived({ error: error.message }));
@@ -57,6 +59,7 @@ const Metrics = () => {
   };
 
   if (fetching) return null;
+  
   return (
     <div className={classes.metricsContainer}>
       <Autocomplete

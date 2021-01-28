@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const subscriptionClient = new SubscriptionClient('wss://react.eogresources.com/graphql', {});
 
 const client = createClient({
-  url: 'https://react.eogresources.com/graphql',
+  url: 'https://react.eogresources.com/graphql',  // GraphQL URL
   exchanges: [
     ...defaultExchanges,
     subscriptionExchange({
@@ -62,6 +62,7 @@ const handleSubscription = (measurements, response) => {
   if (!measurements) {
     measurements = [];
   }
+
   return response.newMeasurement;
 };
 
