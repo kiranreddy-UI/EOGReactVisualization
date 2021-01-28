@@ -87,7 +87,7 @@ const Box = props => {
   return (
     <div className={classes.BoxContainer}>
       <Grid container direction="row" spacing={2}>
-        {selectedMetrics.map((key, i) => {
+        {selectedMetrics.map((key, i) => {  // List All Selected Metrics
           return (
             <Grid item xs={4} key={i}>
               <Card key={i}>
