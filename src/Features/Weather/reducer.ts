@@ -23,14 +23,14 @@ const slice = createSlice({
   name: 'weather',
   initialState,
   reducers: {
-    weatherDataRecevied: (state, action: PayloadAction<WeatherForLocation>) => {
+    weatherDataRecevied: (state:any, action: PayloadAction<WeatherForLocation>) => {
       const { description, locationName, temperatureinCelsius } = action.payload;
       state.temperatureinCelsius = temperatureinCelsius;
       state.temperatureinFahrenheit = toF(temperatureinCelsius);
       state.description = description;
       state.locationName = locationName;
     },
-    weatherApiErrorReceived: (state, action: PayloadAction<ApiErrorAction>) => state,
+    weatherApiErrorReceived: (state:any, action: PayloadAction<ApiErrorAction>) => state,
   },
 });
 

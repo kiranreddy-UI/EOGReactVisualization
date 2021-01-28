@@ -98,7 +98,6 @@ const Box = props => {
                       <ListItemText
                         classes={{primary:classes.valueClass}}
                         primary={val[key] ? `${val[key].value} ${val[key].unit}` : "No Data"}
-                        // secondary="Last Received"
                       />
                     </ListItem>
                   </List>

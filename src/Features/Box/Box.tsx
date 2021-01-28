@@ -9,25 +9,24 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 
 const Box = (props:any) => {
-  
-    return (
-      <Grid container direction="row" spacing={2}>
-        <Grid item xs={4}>
-          <Card>
-            <CardHeader/>
-            <CardContent>
-              <List>
-                <ListItem>
-                  <ListItemText
-                    primary=""
-                  />
-                </ListItem>
-              </List>
-            </CardContent>
-          </Card>
-        </Grid>
+  return (
+    <Grid container direction="row" spacing={2}>
+      <Grid item xs={4}>
+        <Card>
+          <CardHeader/>
+          <CardContent>
+            <List>
+              <ListItem>
+                <ListItemText
+                  primary=""
+                />
+              </ListItem>
+            </List>
+          </CardContent>
+        </Card>
       </Grid>
-    );
+    </Grid>
+  );
 };
   
 export default Box;

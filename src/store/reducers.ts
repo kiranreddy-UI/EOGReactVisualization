@@ -3,7 +3,7 @@ import { reducer as metricsReducer } from '../Features/Metrics/reducer';
 import { reducer as chartReducer } from '../Features/Chart/reducer';
 
 export default {
-  weather: weatherReducer,
-  metrics: metricsReducer,
-  chart: chartReducer,
+  weather: weatherReducer,  // Weather Reducer
+  metrics: metricsReducer,  // Metrics Reducer
+  chart: chartReducer,  // Chart Reducer
 };
